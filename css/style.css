@@ -95,7 +95,7 @@ section.hero .down-arrow path {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 25em;
+  height: 12em;
 }
 .more-info .title {
   font-weight: bold;
@@ -138,5 +138,54 @@ section.hero .down-arrow path {
   nav ul a:hover {
     background: none;
     text-decoration: underline;
+  }
+  .hero-img {
+    left: unset;
+    right: 0;
+    width: 50%;
+    height: 42em;
+  }
+  .logo {
+    color: black;
+  }
+  .logo span {
+    color: red;
+  }
+  section.hero {
+    color: black;
+    height: auto;
+    width: 40%;
+    margin-bottom: 8em;
+  }
+  section.hero svg.down-arrow {
+    stroke: black;
+    position: unset;
+  }
+  section.hero svg.down-arrow path {
+    fill: black;
+  }
+  .feature {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3em;
+    margin-bottom: 8em;
+  }
+  .feature img {
+    width: 25em;
+  }
+  .feature .content {
+    text-align: right;
+    width: 25em;
+  }
+  .feature.left {
+    grid-template-areas: "left right";
+  }
+  .feature.left img {
+    grid-area: left;
+  }
+  .feature.left .content {
+    text-align: left;
+    width: 25em;
+    justify-self: left;
   }
 }/*# sourceMappingURL=style.css.map */

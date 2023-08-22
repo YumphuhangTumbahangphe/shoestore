@@ -101,7 +101,7 @@ section.hero{
     img{
         width: 100%;
         object-fit: cover;
-        height: 29em;
+        height: 12em;
     }
 
     .title{
@@ -149,5 +149,61 @@ section.hero{
             }
         }
     }
+    .hero-img{
+        left: unset;
+        right: 0;
+        width: 50%;
+        height: 42em;
+    }
+    .logo{
+        color: black;
 
+        span{
+            color: red;
+        }
+    }
+    section.hero{
+        color:black;
+        height: auto;
+        width: 40%;
+        margin-bottom: 8em;
+
+        svg.down-arrow{
+            stroke: black;
+            position: unset;
+
+            path{
+                fill: black;
+            }
+        }
+    }
+    .feature{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 3em;
+        margin-bottom: 8em;
+
+        img{
+            width: 25em;
+        }
+
+        .content{
+            text-align: right;
+            width: 25em;
+        }
+    }
+    .feature.left{
+        grid-template-areas: "left right";
+       
+        img{
+            grid-area: left;
+            
+        }
+
+        .content{
+            text-align: left;
+            width: 25em;
+            justify-self: left;
+        }
+    }
 }
