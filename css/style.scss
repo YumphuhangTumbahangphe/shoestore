@@ -230,7 +230,7 @@ section.hero{
     }
 }
 
-keyframes movearrow{
+@keyframes movearrow{
     from{
         transform: translateY(-30px);
     }
